@@ -59,7 +59,7 @@ SRS Imager 1200L: \
 #
 # Adobe PostScript Level 2 Plotters
 #
-Generic 300 dpi Adobe PostScript Level 2 Plotter: \
+p1|Generic 300 dpi Adobe PostScript Level 2 Plotter: \
         :manufacturer=Adobe: \
         :type=postscript2: \
         :maximumPages#30: \
