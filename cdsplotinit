@@ -1,0 +1,1742 @@
+############################################################################
+# Cadence Design Systems                                       Version 5.1.0
+#
+# cdsplotinit plotter models file.
+#
+# This file is the foundation plotter model data base for Cadence Design
+# Systems plot software.  This file is used to build site specific
+# .cdsplotinit files.
+#
+# IMPORTANT****YOU MUST CREATE A SITE SPECIFIC VERSION OF THIS FILE AND
+#              LOCATE IT IN EITHER <install_path>/tools/plot, your
+#              working directory, or your home directory.
+#
+############################################################################
+#
+# Adobe PostScript Level 1 Plotters
+#
+Encapsulated PostScript: \
+	:manufacturer=Adobe: \
+	:type=epsf: \
+	:maximumPages#1: \
+	:resolution#300: \
+	:paperSize="5x5 inches" 1500 1500: \
+	:paperSize="8x8 inches" 2400 2400: \
+	:paperSize="Unlimited"  72000 72000:
+
+Generic 300 dpi Adobe PostScript Level 1 Plotter: \
+        :manufacturer=Adobe: \
+        :type=postscript1: \
+        :maximumPages#30: \
+        :resolution#300: \
+        :paperSize="A" 2400 3150 75 75:
+
+Apple LaserWriter II NT/NTX: \
+	:manufacturer=Apple Computer: \
+	:type=postscript1: \
+	:maximumPages#30: \
+	:resolution#300: \
+	:paperSize="A" 2400 3150 75 75: \
+	:paperSize="A4" 2332 3360 60 60:
+
+Imagen 7320 Ultrascript: \
+	:manufacturer=QMS: \
+	:type=postscript1: \
+	:maximumPages#30: \
+	:resolution#300: \
+	:paperSize="A" 2400 3150 75 75: \
+	:paperSize="B" 3150 4990 100 45:
+
+SRS Imager 1200L: \
+	:manufacturer=SRS: \
+	:type=postscript1: \
+	:maximumPages#30: \
+	:resolution#600: \
+	:paperSize="A" 4856 6368 120 120: \
+	:paperSize="B" 6352 9984 120 120: \
+	:paperSize="A4" 4720 6784 120 120: \
+	:paperSize="A3" 6784 9648 90 150:
+#
+# Adobe PostScript Level 2 Plotters
+#
+Generic 300 dpi Adobe PostScript Level 2 Plotter: \
+        :manufacturer=Adobe: \
+        :type=postscript2: \
+        :maximumPages#30: \
+        :resolution#300: \
+        :paperSize="A" 2405 3165 86 66: \
+        :paperSize="B" 3165 4953 66 86:
+
+Generic 600 dpi Adobe PostScript Level 2 Plotter: \
+        :manufacturer=Adobe: \
+        :type=postscript2: \
+        :maximumPages#30: \
+        :resolution#600: \
+        :paperSize="A" 4810 6330 172 132: \
+        :paperSize="B" 6402 10002 99 99:
+
+Tektronix Phaser III PXi: \
+	:manufacturer=Tektronix: \
+        :type=postscript2: \
+	:maximumPages#30: \
+	:resolution#300: \
+	:paperSize="A" 2405 3165 86 66: \
+	:paperSize="B" 3165 4953 66 86:
+
+# NOTE: Make sure the printer orientation option is set up correctly.
+Hewlett-Packard LaserJet 4MV, PS: \
+        :manufacturer=Hewlett-Packard: \
+        :type=postscript2: \
+        :maximumPages#30: \
+        :resolution#600: \
+        :paperSize="A" 4902 6402 99 99: \
+        :paperSize="B" 6402 10002 99 99: \
+        :paperSize="Legal" 4926 8202 90 90: \
+        :paperSize="A4" 4758 6846 90 90: \
+        :paperSize="A3" 6846 9720 90 90:
+
+#
+# Generic Windows printer (winplot)
+#
+Generic Windows printer: \
+	:manufacturer=Cadence Desing Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#600: \
+	:outtype=RPM_VCGL: \
+	:paperSize="A" 4800 6300 150 150:
+
+#
+# Hewlett-Packard HP-GL/2 plotters.
+#
+Hewlett-Packard 7600 Series Electrostatic: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hpgl2: \
+	:maximumPages#10: \
+	:resolution#1016: \
+	:paperSize="D portrait" 22342 34534: \
+	:paperSize="E portrait" 34534 44694: \
+	:paperSize="22 inches wide" 22342 0: \
+	:paperSize="34 inches wide" 34534 0:
+
+Hewlett-Packard DesignJet 5000PS (Postscript): \
+	:manufacturer=Hewlett-Packard: \
+	:type=postscript2: \
+	:maximumPages#30: \
+	:resolution#1200: \
+	:paperSize="Legal" 9600 16200 300 300: \
+	:paperSize="Letter" 9600 12600 300 300: \
+	:paperSize="A portrait" 9600 12600 300 300: \
+	:paperSize="A landscape" 12600 9600 300 300: \
+	:paperSize="B portrait" 12600 19800 300 300: \
+	:paperSize="B landscape" 19800 12600 300 300: \
+	:paperSize="C portrait" 19800 25800 300 300: \
+	:paperSize="C landscape" 25800 19800 300 300: \
+	:paperSize="D portrait" 25800 40200 300 300: \
+	:paperSize="D landscape" 40200 25800 300 300: \
+	:paperSize="E portrait" 40200 52200 300 300: \
+	:paperSize="A0 portrait" 39132 55572 300 300: \
+	:paperSize="A1 portrait" 27360 39132 300 300: \
+	:paperSize="A1 landscape" 39132 27360 300 300: \
+	:paperSize="A2 portrait" 19200 27360 300 300: \
+	:paperSize="A2 landscape" 27360 19200 300 300: \
+	:paperSize="A3 portrait" 13428 19200 300 300: \
+	:paperSize="A3 landscape" 19200 13428 300 300: \
+	:paperSize="A4 portrait" 9300 13428 300 300: \
+	:paperSize="A4 landscape" 13428 9300 300 300: \
+	:paperSize="B4 portrait" 11520 16500 300 300: \
+	:paperSize="42 inches wide" 0 49800:
+
+Hewlett-Packard DesignJet 5000PS (HPGL/2): \
+	:manufacturer=Hewlett-Packard: \
+	:type=hpgl2: \
+	:maximumPages#30: \
+	:resolution#1016: \
+	:paperSize="A portrait" 8226 9806:     \
+	:paperSize="A landscape" 10766 7266:   \
+	:paperSize="B portrait" 10766 15902:   \
+	:paperSize="B landscape" 16862 9806:   \
+	:paperSize="C portrait" 16723 20686:   \
+	:paperSize="C landscape" 21803 15605:  \
+	:paperSize="D portrait" 21803 32878:   \
+	:paperSize="D landscape" 33995 20686:  \
+	:papersize="E portrait" 33995 43139:   \
+	:paperSize="A0 portrait" 33081 45883:  \
+	:paperSize="A1 portrait" 23226 31963:  \
+	:paperSize="A1 landscape" 33081 22108: \
+	:paperSize="A2 portrait" 16215 22108:  \
+	:paperSize="A2 landscape" 23226 15098: \
+	:paperSize="A3 portrait" 11470 15430:  \
+	:paperSize="A3 landscape" 16390 10510: \
+	:paperSize="A4 portrait" 7990 10510:   \
+	:paperSize="A4 landscape" 11470 7030:  \
+	:paperSize="24 inches wide" 23984 0:   \
+	:paperSize="36 inches wide" 36176 0:   \
+	:paperSize="42 inches wide" 42672 0:
+
+Hewlett-Packard DesignJet 600: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hpgl2: \
+	:maximumPages#10: \
+	:resolution#1016: \
+	:white#1:black#1:red#1:yellow#1:green#1:cyan#1:blue#1:magenta#1: \
+	:paperSize="A portrait" 8226 9806:     \
+	:paperSize="A landscape" 10766 7266:   \
+	:paperSize="B portrait" 10766 15902:   \
+	:paperSize="B landscape" 16862 9806:   \
+	:paperSize="C portrait" 16862 20982:   \
+	:paperSize="C landscape" 21942 15902:  \
+	:paperSize="D portrait" 21942 33174:   \
+	:paperSize="D landscape" 34134 20982:  \
+	:papersize="E portrait" 34134 43334:   \
+	:paperSize="A0 portrait" 33230 46190:  \
+	:paperSize="A1 portrait" 23350 32270:  \
+	:paperSize="A1 landscape" 33230 22390: \
+	:paperSize="A2 portrait" 16390 22390:  \
+	:paperSize="A2 landscape" 23350 15430: \
+	:paperSize="A3 portrait" 11470 15430:  \
+	:paperSize="A3 landscape" 16390 10510: \
+	:paperSize="A4 portrait" 7990 10510:   \
+	:paperSize="A4 landscape" 11470 7030:  \
+	:paperSize="24 inches wide" 23984 0:   \
+	:paperSize="36 inches wide" 36176 0:
+
+Hewlett-Packard DesignJet 650C: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hpgl2: \
+	:maximumPages#10: \
+	:resolution#1016: \
+	:paperSize="A portrait" 8226 9806:     \
+	:paperSize="A landscape" 10766 7266:   \
+	:paperSize="B portrait" 10766 15902:   \
+	:paperSize="B landscape" 16862 9806:   \
+	:paperSize="C portrait" 16862 20982:   \
+	:paperSize="C landscape" 21942 15902:  \
+	:paperSize="D portrait" 21942 33174:   \
+	:paperSize="D landscape" 34134 20982:  \
+	:papersize="E portrait" 34134 43334:   \
+	:paperSize="A0 portrait" 33230 46190:  \
+	:paperSize="A1 portrait" 23350 32270:  \
+	:paperSize="A1 landscape" 33230 22390: \
+	:paperSize="A2 portrait" 16390 22390:  \
+	:paperSize="A2 landscape" 23350 15430: \
+	:paperSize="A3 portrait" 11470 15430:  \
+	:paperSize="A3 landscape" 16390 10510: \
+	:paperSize="A4 portrait" 7990 10510:   \
+	:paperSize="A4 landscape" 11470 7030:  \
+	:paperSize="24 inches wide" 23984 0:   \
+	:paperSize="36 inches wide" 36176 0:
+
+Hewlett-Packard DraftMaster: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hpgl2pen: \
+	:maximumPages#10: \
+	:resolution#1016: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="A portrait" 7346 8926:     \
+	:paperSize="A landscape" 9886 6386:    \
+	:paperSize="B portrait" 9886 15022:    \
+	:paperSize="C landscape" 21062 15022:  \
+	:paperSize="D portrait" 21062 32294:   \
+	:paperSize="D landscape" 33254 20102:  \
+	:papersize="E portrait" 33254 42454:   \
+	:paperSize="A0 portrait" 32350 45310:  \
+	:paperSize="A1 portrait" 22470 31390:  \
+	:paperSize="A1 landscape" 32350 21510: \
+	:paperSize="A2 landscape" 22470 14540: \
+	:paperSize="A3 portrait" 10580 14540:  \
+	:paperSize="A4 portrait" 7120 9640:    \
+	:paperSize="A4 landscape" 10590 6150:  \
+	:paperSize="36 inches wide" 32360 0:
+
+Hewlett-Packard 7550 Plus: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hpgl2pen: \
+	:white#1:black#1:red#6:yellow#4:green#5:cyan#2:blue#5:magenta#4: \
+	:maximumPages#10: \
+	:resolution#1016: \
+	:paperSize="A landscape" 10160 7830:  \
+	:paperSize="B portrait" 10160 16440:  \
+	:paperSize="A3 portrait" 10860 15960: \
+	:paperSize="A4 landscape" 10860 7590:
+
+Hewlett-Packard PaintJet XL: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hpgl2: \
+	:maximumPages#10: \
+	:resolution#1016: \
+	:paperSize="A" 8303 10894:   \
+	:paperSize="B" 10832 16871:  \
+	:paperSize="A3" 11193 16397: \
+	:paperSize="A4" 8122 11594:
+
+Hewlett-Packard PaintJet XL300: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hpgl2: \
+	:maximumPages#10: \
+	:resolution#1016: \
+	:paperSize="A" 8240 10760:   \
+	:paperSize="B" 10760 16880:  \
+	:paperSize="A3" 11680 16400: \
+	:paperSize="A4" 8200 11680:
+
+Hewlett-Packard LaserJet III: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hpgl2laserJet: \
+	:maximumPages#10: \
+	:white#1:black#1:red#1:yellow#1:green#1:cyan#1:blue#1:magenta#1: \
+	:resolution#1016: \
+	:paperSize="A" 7500 10100:     \
+	:paperSize="Legal" 7500 13150: \
+	:paperSize="A4" 7324 10800:
+
+Hewlett-Packard LaserJet 4MV, HP-GL/2: \
+        :manufacturer=Hewlett-Packard: \
+        :type=hpgl2: \
+        :maximumPages#30: \
+        :resolution#1016: \
+        :paperSize="A" 8300 10840: \
+        :paperSize="B" 10840 16936: \
+        :paperSize="Legal" 8340 13888: \
+        :paperSize="A4" 8056 11592: \
+        :paperSize="A3" 11592 16459:
+
+#
+# Hewlett-Packard HP-GL plotters.
+#
+#
+# type hp7440 is the older plotter that does not support filled polygons.
+# type hp7440pm supports filled polygons.
+Hewlett-Packard 7440: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hp7440: \
+	:maximumPages#1: \
+	:resolution#1016: \
+	:white#1:black#1:red#6:yellow#4:green#5:cyan#2:blue#5:magenta#4: \
+	:paperSize="A" 10000 7200:  \
+	:paperSize="A4" 10000 7200:
+
+Hewlett-Packard 7440 Polygon Mode: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hp7440pm: \
+	:maximumPages#1: \
+	:resolution#1016: \
+	:white#1:black#1:red#6:yellow#4:green#5:cyan#2:blue#5:magenta#4: \
+	:paperSize="A" 10000 7200:  \
+	:paperSize="A4" 10000 7200:
+
+Hewlett-Packard 7475: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hp7475: \
+	:maximumPages#1: \
+	:resolution#1016: \
+	:white#1:black#1:red#6:yellow#4:green#5:cyan#2:blue#5:magenta#4: \
+	:paperSize="A" 10000 7200:  \
+	:paperSize="B" 15200 10000: \
+	:paperSize="A4" 10000 7200: \
+	:paperSize="A3" 15200 10000:
+
+Hewlett-Packard 7510A: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hp7510: \
+	:maximumPages#1: \
+	:resolution#1016: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="A" 10000 7200: \
+	:paperSize="B" 15200 10000: \
+	:paperSize="A4" 10000 7200: \
+	:paperSize="A3" 15200 10000:
+
+Hewlett-Packard 7550A: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hp7550a: \
+	:maximumPages#10: \
+	:resolution#1016: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="A" 10000 7200: \
+	:paperSize="B" 15200 10000: \
+	:paperSize="A4" 10000 7200: \
+	:paperSize="A3" 15200 10000:
+
+Hewlett-Packard 7550 Plus 7550a emulation: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hp7550a1: \
+	:maximumPages#10: \
+	:resolution#1016: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="A" 10000 7200: \
+	:paperSize="B" 15200 10000: \
+	:paperSize="A4" 10000 7200: \
+	:paperSize="A3" 15200 10000:
+
+Hewlett-Packard 7570A: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hp7570: \
+	:maximumPages#1: \
+	:resolution#1016: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="C" 19952 13912: \
+	:paperSize="D" 31184 19952:  \
+	:paperSize="A2" 21360 13440: \
+	:paperSize="A1" 30280 21360:
+
+# type hp7580 is the older plotter that does not support filled polygons.
+# type hp7580pm supports filled polygons.
+Hewlett-Packard 7580A/B: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hp7580: \
+	:maximumPages#1: \
+	:resolution#1016: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="A" 5276 8776:   \
+	:paperSize="B" 13912 8776:  \
+	:paperSize="C" 18992 14872: \
+	:paperSize="D" 31184 19952: \
+	:paperSize="A1" 30280 21360: \
+	:paperSize="A2" 20400 14400: \
+	:paperSize="A3" 13440 9480: \
+	:paperSize="A4" 5040 9480:
+
+Hewlett-Packard 7580A/B Polygon Mode: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hp7580pm: \
+	:maximumPages#1: \
+	:resolution#1016: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="A" 5276 8776:   \
+	:paperSize="B" 13912 8776:  \
+	:paperSize="C" 18992 14872: \
+	:paperSize="D" 31184 19952: \
+	:paperSize="A1" 30280 21360: \
+	:paperSize="A2" 20400 14400: \
+	:paperSize="A3" 13440 9480: \
+	:paperSize="A4" 5040 9480:
+
+#
+# type hp7586sheet is for both the 7585 and 7586 using sheet paper
+Hewlett-Packard 7585A and 7586A sheet: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hp7586sheet: \
+	:maximumPages#6: \
+	:resolution#1016: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="A" 6456 10104:      \
+        :paperSize="A Exp" 7260 10900:  \
+        :paperSize="B" 15060 10104:     \
+        :paperSize="B Exp" 15860 10900: \
+        :paperSize="C" 6456 10104:      \
+        :paperSize="C Exp" 7260 10900:  \
+        :paperSize="D" 15060 10104:     \
+        :paperSize="D Exp" 15860 10900: \
+        :paperSize="E" 6456 10104:      \
+        :paperSize="E Exp" 7260 10900:
+
+# type hp7586roll is for the 7586 with the roll paper installed.
+Hewlett-Packard 7585A and 7586A roll: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hp7586roll: \
+	:maximumPages#6: \
+	:resolution#1016: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="36 inch" 0 35370:
+
+Hewlett-Packard 7595A: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hp7595: \
+	:maximumPages#6: \
+	:resolution#1016: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="A" 8696 5196:   \
+	:paperSize="B" 13832 8696:  \
+	:paperSize="C" 19872 13832: \
+	:paperSize="D" 31104 19872: \
+	:paperSize="E" 41264 32064: \
+	:paperSize="A4" 9400 4960:  \
+	:paperSize="A3" 13360 9400: \
+	:paperSize="A2" 21280 13360: \
+	:paperSize="A1" 30200 21280: \
+	:paperSize="A0" 44120 31160:
+
+Hewlett-Packard 7596A: \
+	:manufacturer=Hewlett-Packard: \
+	:type=hp7596: \
+	:maximumPages#6: \
+	:resolution#1016: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="A" 8696 5196:   \
+	:paperSize="B" 13832 8696:  \
+	:paperSize="C" 19872 13832: \
+	:paperSize="D" 31104 19872: \
+	:paperSize="E" 41264 32064: \
+	:paperSize="A4" 9400 4960:  \
+	:paperSize="A3" 13360 9400: \
+	:paperSize="A2" 21280 13360: \
+	:paperSize="A1" 30200 21280: \
+	:paperSize="A0" 44120 31160:
+
+
+#
+# Xerox Engineering Systems - Versatec Plotters
+#
+# V-80 series
+v80: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="11 inches wide" 0 2112:
+
+v81: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#100: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="11 inches wide" 0 1024:
+
+v82: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#100: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="11 inches wide" 0 1056:
+#
+# 7000 series (200 dpi)
+#
+7222: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="22 inches wide" 0 4224:
+
+7224: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 4608:
+
+7225: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 4704:
+
+7236: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 7040:
+
+7244: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 8608:
+
+#
+# 7000 series (400 dpi)
+#
+7422: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="22 inches wide" 0 8448:
+
+7424: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 9216:
+
+7425: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 9408:
+
+7436: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 14080:
+
+7444: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="44 inches wide" 0 17216:
+
+#
+# Color wide plotter series ECP-42
+#
+ecp42: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="42 inches wide" 0 8000:
+
+ecp42m: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="42 inches wide" 0 8192:
+
+#
+# CE-3000 color series (200 dpi)
+#
+ce3224: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 4511:
+
+ce3224m: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 4704:
+
+ce3225: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 4608:
+
+ce3225m: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 4704:
+
+ce3236: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 6848:
+
+ce3236m: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 7040:
+
+ce3244: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="44 inches wide" 0 8416:
+
+ce3244m: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 8608:
+
+#
+# CE-3000 color series (400 dpi)
+#
+ce3424: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 9024:
+
+ce3424m: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 9408:
+
+ce3425: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 9216:
+
+ce3425m: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 9408:
+
+ce3436: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 13696:
+
+ce3436m: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 14080:
+
+ce3444: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="44 inches wide" 0 16832:
+
+ce3444m: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="44 inches wide" 0 17216:
+
+#
+# 2500 Series (Spectrum)
+#
+c2552: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="11 inches wide" 0 2112:
+
+c2552m: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="11 inches wide" 0 2112:
+
+c2558: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="11 inches wide" 0 4224:
+
+c2558m: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="11 inches wide" 0 4224:
+
+c2562: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="297mm wide" 0 2272:
+
+c2562m: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="297mm wide" 0 2272:
+
+c2568: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="297mm wide" 0 4544:
+
+c2568m: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="297mm wide" 0 4544:
+
+#
+# 8200 Wide Series
+#
+8222: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="22 inches wide" 0 4224:
+
+8224: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 4608:
+
+8236: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 7040:
+
+8242: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="42 inches wide" 0 8196:
+
+8272: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="72 inches wide" 0 14336:
+
+#
+# 8500 Series
+#
+8522: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="22 inches wide" 0 4608:
+
+8525: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 4704:
+
+8536: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 7040:
+
+8522HR: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="22 inches wide" 0 9216:
+
+8525HR: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 9408:
+
+8536HR: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 14080:
+
+8636: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 7040:
+
+8636HR: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 14080:
+
+#
+# 8900 series (200 DPI)
+#
+8924-2S: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 4512:
+
+# 8924-2, 8924-2R and 8924-2E
+8924-2: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 4512:
+
+8924-2M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 4704:
+
+8925-2S: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 4608:
+
+# 8925-2, 8925-2R and 8925-2E
+8925-2: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 4608:
+
+8925-2M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 4707:
+
+8936-2S: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 6848:
+
+# 8936-2, 8936-2R and 8936-2E
+8936-2: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 6848:
+
+8936-2M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 7040:
+
+8944-2S: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="44 inches wide" 0 8416:
+
+# 8944-2, 8944-2R and 8944-2E
+8944-2: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="44 inches wide" 0 8416:
+
+8944-2M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 8608:
+
+#
+# 8900 series (400 DPI)
+#
+8924-4S: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 9024:
+
+# 8924-4, 8924-4R and 8924-4E
+8924-4: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 9024:
+
+8924-4M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 9408:
+
+8925-4S: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 9216:
+
+# 8925-4, 8925-4R and 8925-4E
+8925-4: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 9216:
+
+8925-4M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 9408:
+
+8936-4S: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 13696:
+
+8936-4: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 13696:
+
+8936-4M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 14080:
+
+8944-4S: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="44 inches wide" 0 16832:
+
+# 8944-4, 8944-4R and 8944-4E
+8944-4: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="44 inches wide" 0 16832:
+
+8944-4M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 17216:
+
+#
+# 2700 Series Thermal Plotters
+#
+C2726: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTC: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="A4" 2832 2368:
+
+C2726A: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTC: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="A4" 2832 2368:
+
+C2726M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTB: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="A4" 2832 2368:
+
+C2736: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTC: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="A" 2624 2432:
+
+C2736A: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTC: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="A" 2624 2432:
+
+C2736M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTB: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="A" 2624 2432:
+
+C2756: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTC: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="B" 4424 3200:
+
+C2756A: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTC: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="B" 4424 3200:
+
+C2756M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTB: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="B" 4424 3200:
+
+C2766: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTC: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="A3" 4286 3390:
+
+C2766A: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTC: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="A3" 4286 3390:
+
+C2766M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTB: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="A3" 4286 3390:
+
+C2776: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTC: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="B Special" 5151 3200:
+
+C2776A: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTC: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="B Special" 5151 3200:
+
+C2776M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTB: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="B Special" 5151 3200:
+
+C2786: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTC: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="A3 Special" 4912 3392:
+
+C2786A: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTC: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="A3 Special" 4912 3392:
+
+C2786M: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=versTB: \
+	:maximumPages#10: \
+	:resolution#300: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="A3 Special" 4912 3392:
+
+#
+# 8800 Series Laser
+#
+8836_2: \
+        :manufacturer=Xerox Engineering Systems: \
+        :type=intBW: \
+        :maximumPages#10: \
+        :resolution#200: \
+        :residentFonts: \
+        :tmpdir=/usr/tmp: \
+        :paperSize="36 inches wide" 0 7040:
+
+8836_4: \
+	:manufacturer=Xerox Engineering Systems: \
+	:type=intBW: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 14080:
+
+#
+# CalComp Pen Plotters
+#
+1023: \
+        :manufacturer=CalComp: \
+        :type=intCLRC: \
+        :maximumPages#10: \
+        :resolution#2032: \
+        :compress: \
+        :residentFonts: \
+        :instdir=/usr/cds/tools: \
+        :tmpdir=/usr/tmp: \
+        :white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+        :paperSize="A portrait" 16256 20807:   \
+        :paperSize="A landscape" 20807 16256:  \
+        :paperSize="B portrait" 20320 31496:   \
+        :paperSize="B landscape" 32512 19304:  \
+        :paperSize="C portrait" 32512 41656:   \
+        :paperSize="C landscape" 42672 31496:  \
+        :paperSize="D portrait" 42672 66040:   \
+        :paperSize="A1 portrait" 45516 64008:  \
+        :paperSize="A2 portrait" 31496 44500:  \
+        :paperSize="A2 landscape" 45516 30480: \
+        :paperSize="A3 portrait" 21742 30480:  \
+        :paperSize="A3 landscape" 31496 20726: \
+        :paperSize="A4 portrait" 14833 20726:  \
+        :paperSize="A4 landscape" 21742 13817: \
+        :paperSize="24 inches wide" 0 46736:
+
+4036: \
+        :manufacturer=CalComp: \
+        :type=intCLRC: \
+        :maximumPages#10: \
+        :resolution#2032: \
+        :compress: \
+        :residentFonts: \
+        :instdir=/usr/cds/tools: \
+        :tmpdir=/usr/tmp: \
+        :white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="A portrait" 16256 20807:   \
+        :paperSize="A landscape" 20807 16256:  \
+        :paperSize="B portrait" 20320 31496:   \
+        :paperSize="B landscape" 32512 19304:  \
+        :paperSize="C portrait" 32512 41656:   \
+        :paperSize="C landscape" 42672 31496:  \
+        :paperSize="D portrait" 42672 66040:   \
+        :paperSize="D landscape" 67056 41656:  \
+        :paperSize="E portrait" 67056 86360:   \
+        :paperSize="A0 portrait" 65227 92049:  \
+        :paperSize="A1 portrait" 45516 64008:  \
+        :paperSize="A1 landscape" 65024 44500: \
+        :paperSize="A2 portrait" 31496 44500:  \
+        :paperSize="A2 landscape" 45516 30480: \
+        :paperSize="A3 portrait" 21742 30480:  \
+        :paperSize="A3 landscape" 31496 20726: \
+        :paperSize="A4 portrait" 14833 20726:  \
+        :paperSize="A4 landscape" 21742 13817: \
+        :paperSize="36 inches wide" 0 71120:
+
+#
+# CalComp Electrostatic Plotters
+#
+5725: \
+	:manufacturer=CalComp: \
+	:type=intBWC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="25 inches wide" 0 9408:
+
+5733: \
+	:manufacturer=CalComp: \
+	:type=intBWC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="33 inches wide" 0 7040:
+
+5735: \
+	:manufacturer=CalComp: \
+	:type=intBWC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="35 inches wide" 0 14080:
+
+5745: \
+	:manufacturer=CalComp: \
+	:type=intBWC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="45 inches wide" 0 17216:
+
+5825: \
+	:manufacturer=CalComp: \
+	:type=intCLRC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="25 inches wide" 0 9024:
+
+5835: \
+	:manufacturer=CalComp: \
+	:type=intCLRC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="35 inches wide" 0 13696:
+
+5845: \
+	:manufacturer=CalComp: \
+	:type=intCLRC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="45 inches wide" 0 16832:
+
+52224: \
+	:manufacturer=CalComp: \
+	:type=intBWC: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="24 inches wide" 0 4716:
+
+52236: \
+	:manufacturer=CalComp: \
+	:type=intBWC: \
+	:maximumPages#10: \
+	:resolution#200: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="36 inches wide" 0 7040:
+
+52424: \
+        :manufacturer=CalComp: \
+        :type=intBWC: \
+        :maximumPages#10: \
+        :resolution#406: \
+        :compress: \
+        :residentFonts: \
+        :instdir=/usr/cds/tools: \
+        :tmpdir=/usr/tmp: \
+        :white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+        :paperSize="24 inches wide" 0 9580:
+
+52436: \
+        :manufacturer=CalComp: \
+        :type=intBWC: \
+        :maximumPages#10: \
+        :resolution#406: \
+        :compress: \
+        :residentFonts: \
+        :instdir=/usr/cds/tools: \
+        :tmpdir=/usr/tmp: \
+        :white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+        :paperSize="36 inches wide" 0 14300:
+
+57424: \
+	:manufacturer=CalComp: \
+	:type=intBWC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 9408:
+
+57436: \
+	:manufacturer=CalComp: \
+	:type=intBWC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 14080:
+
+57444: \
+	:manufacturer=CalComp: \
+	:type=intBWC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="44 inches wide" 0 17408:
+
+58424: \
+	:manufacturer=CalComp: \
+	:type=intCLRC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="24 inches wide" 0 9408:
+
+58436: \
+	:manufacturer=CalComp: \
+	:type=intCLRC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="36 inches wide" 0 14080:
+
+58444: \
+	:manufacturer=CalComp: \
+	:type=intCLRC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="44 inches wide" 0 17408:
+
+68436: \
+	:manufacturer=CalComp: \
+	:type=intCLRC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="36 inches wide" 0 13904:
+
+68444: \
+	:manufacturer=CalComp: \
+	:type=intCLRC: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="44 inches wide" 0 17216:
+
+#
+# CCRF is CalComp Compressed Raster Format.  This must be used in conjunction
+# with the Cadence Design raptor raster driver and not the cds2calcomp driver.
+#
+68436 CCRF: \
+	:manufacturer=CalComp: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="36 inches wide" 0 13904:
+
+68444 CCRF: \
+	:manufacturer=CalComp: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#400: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="44 inches wide" 0 17216:
+
+#
+# CalComp Ink Jet Plotters
+#
+5324: \
+	:manufacturer=CalComp: \
+	:type=intCLRC: \
+	:maximumPages#10: \
+	:resolution#360: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="24 inches wide" 0 8280:
+
+
+5336: \
+	:manufacturer=CalComp: \
+	:type=intCLRC: \
+	:maximumPages#10: \
+	:resolution#360: \
+	:compress: \
+	:residentFonts: \
+	:instdir=/usr/cds/tools: \
+	:tmpdir=/usr/tmp: \
+	:white#8:black#1:red#6:yellow#4:green#7:cyan#2:blue#5:magenta#3: \
+	:paperSize="44 inches wide" 0 12600:
+
+#
+# CCRF-IL is CalComp Compressed Raster Format for ink jet plotters.  This
+# must be used in conjunction with the Cadence Design raptor raster driver
+# and not the cds2calcomp driver.
+#
+TechJet 5324 CCRF-IL: \
+	:manufacturer=CalComp: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#360: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="24 inches wide" 0 8280:
+
+TechJet 5336 CCRF-IL: \
+	:manufacturer=CalComp: \
+	:type=intCLR: \
+	:maximumPages#10: \
+	:resolution#360: \
+	:residentFonts: \
+	:tmpdir=/usr/tmp: \
+	:paperSize="44 inches wide" 0 12600:
